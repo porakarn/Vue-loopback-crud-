@@ -10,13 +10,11 @@
 
 <script>
 
-import axios from 'axios';
-
-export default {
+ import axios from 'axios';
+   export default {
   data() {
         return {
             meetup: {}
-
         }
     },
 mounted(){
@@ -33,7 +31,7 @@ mounted(){
 },
 methods:{
     onDelete(){
-      let meetupId = this.$route.meetup.id;
+      let meetupId = this.$route.params.id;
     axios.delete(`http://localhost:5000/api/meetups/${meetupId}`)
      
         .then((response) => {
@@ -58,4 +56,6 @@ methods:{
 </script>
 
 <style scoped>
+
+
 </style>

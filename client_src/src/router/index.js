@@ -4,7 +4,7 @@ import Home from '@/components/Home'
 import Addmeetup from '@/components/Addmeetup'
 import Meetups from '@/components/Meetups'
 import Viewmeetup from '@/components/Viewmeetup'
-import Editmeetup from '@/components/Editmeetup'
+
 
 Vue.use(Router)
 
@@ -24,11 +24,6 @@ export default new Router({
        path: '/meetups',
        name: 'Meetups',
        component: Meetups
-     },
-     {
-       path: '/meetups/edit/:id',
-       name: 'Editmeetup',
-       component: Editmeetup
      },
      {
        path: '/meetups/:id',

@@ -35,19 +35,15 @@
 </template>
 
 <script>
-/* eslint-disable */
 
 import axios from 'axios';
 export default {
-
     name:'meetup',
     data() {
         return {
             meetups: null
-
         }
     },
-
         mounted() {
         axios.get('http://localhost:5000/api/meetups')
             .then((response) => {
@@ -58,11 +54,10 @@ export default {
                 console.log(error);
             });
     },
-
       
      
     }
-
 </script>
+
 
 
